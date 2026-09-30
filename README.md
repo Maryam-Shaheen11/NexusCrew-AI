@@ -75,15 +75,7 @@ Default model:
 gemini/gemini-3.8-flash
 ```
 
-### Groq
 
-Default Groq model:
-
-```text
-openai/gpt-oss-120b
-```
-
-Groq is accessed through its OpenAI-compatible API endpoint.
 
 ## Important Python version note
 
@@ -121,75 +113,8 @@ After first run, CrewAI will create:
 
 Do not commit that folder.
 
-## Setup on Windows
 
-### 1. Check Python
-
-```powershell
-py --version
-```
-
-You want Python 3.13.x.
-
-### 2. Create the project folder
-
-Open PowerShell inside the project folder.
-
-### 3. Create a Python 3.13 environment
-
-```powershell
-py -3.13 -m venv .venv
-```
-
-### 4. Activate it
-
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-If PowerShell blocks activation, you can run:
-
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\.venv\Scripts\Activate.ps1
-```
-
-### 5. Upgrade pip
-
-```powershell
-python -m pip install --upgrade pip
-```
-
-### 6. Install dependencies
-
-```powershell
-python -m pip install -r requirements.txt
-```
-
-### 7. Create local secrets
-
-Copy:
-
-```text
-.streamlit/secrets.toml.example
-```
-
-to:
-
-```text
-.streamlit/secrets.toml
-```
-
-Then add your real keys:
-
-```toml
-GEMINI_API_KEY = "your-real-gemini-key"
-GROQ_API_KEY = "your-real-groq-key"
-```
-
-You may provide both keys. The UI lets you select Gemini or Groq.
-
-### 8. Start Streamlit
+### . Start Streamlit
 
 Use:
 
@@ -292,3 +217,6 @@ Possible next versions:
 ## License
 
 Add the license you want to use before publishing the repository.
+
+## LIVE APP LINK
+https://nexuscrew-ai.streamlit.app/
