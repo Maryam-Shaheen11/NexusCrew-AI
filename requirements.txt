@@ -1,0 +1,6 @@
+# Python 3.13 recommended.
+# CrewAI 1.15.22 requires Python >=3.10 and <3.14.
+
+crewai[google-genai,openai,embeddings]==1.15.22
+streamlit==1.64.0
+sentence-transformers>=5.1.0
